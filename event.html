@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="KA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>თამაში დიმინო</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <marquee><h1>თამაში დომინო</h1></marquee>
+    </header>
+    <nav>
+        
+    </nav>
+    <section>
+        <article>
+            <img src="images/back.png" id="surati1" onclick="wkapi();" onmouseover="dadgoma();" onmouseout="gamosvla();">
+            <p id="result"></p>
+            <p id="angarishi"></p>
+            <script>
+                function wkapi(){
+                    //alert("აქ ვარ");
+                    //document.getElementById("result").innerHTML="wkapi";
+                    document.getElementById("surati1").src="images/6-6.png";
+                }
+                function dadgoma(){
+                    //alert("შევედი");
+                    //document.getElementById("result").innerHTML="dadgoma";
+                    document.getElementById("surati1").src="images/1-1.png";
+                }
+                function gamosvla(){
+                    //alert("გამოვედი");
+                    //document.getElementById("result").innerHTML="gamosvla";
+                    document.getElementById("surati1").src="images/5-5.png";
+                }
+            </script>
+        </article>
+    </section>
+    <footer>
+        &copy; ყველა უფლება დაცულია Copyright 2023
+    </footer>
+    
+
+</body>
+</html>
