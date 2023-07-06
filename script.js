@@ -25,6 +25,7 @@ function change(){
     document.images[0].src="images/"+qvebi[r];
     pirveli = qulebi[r];
     document.getElementById("btn").disabled = true;
+    document.getElementById("btn").style.backgroundColor = "lightblue";
 }
 
 function up(){
@@ -42,12 +43,14 @@ function up(){
             document.getElementById("result").innerHTML="არ არის მაღალი! თქვენ წააგეთ.";
             document.getElementById("magla").disabled = true;
             document.getElementById("dabla").disabled = true;   
+            document.getElementById("btn").style.backgroundColor = "lightblue";
         }
     }else
     {
         document.getElementById("result").innerHTML="გილოცავთ, თქვენ მოიგეთ.";
         document.getElementById("magla").disabled = true;
         document.getElementById("dabla").disabled = true;
+        document.getElementById("btn").style.backgroundColor = "lightblue";
     }
 }
 
@@ -64,6 +67,7 @@ function down(){
         }else
         {
             document.getElementById("result").innerHTML="არ არის დაბალი! თქვენ წააგეთ.";
+            document.getElementById("btn").style.backgroundColor = "lightblue";
             document.getElementById("magla").disabled = true;
             document.getElementById("dabla").disabled = true;
         }
@@ -71,5 +75,6 @@ function down(){
         document.getElementById("result").innerHTML="გილოცავთ, თქვენ მოიგეთ.";
         document.getElementById("magla").disabled = true;
         document.getElementById("dabla").disabled = true;
+        document.getElementById("btn").style.backgroundColor = "lightblue";
     }
 }
